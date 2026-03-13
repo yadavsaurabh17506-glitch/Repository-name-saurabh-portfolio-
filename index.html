@@ -1,67 +1,165 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>Saurabh Yadav</title>
+<title>Portfolio Website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
-font-family: Arial;
 margin:0;
-background:#111;
+font-family:Arial;
+background:#0f172a;
 color:white;
+}
+
+nav{
+background:#020617;
+padding:15px;
 text-align:center;
 }
 
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
 header{
-background:black;
-padding:20px;
-font-size:30px;
+text-align:center;
+padding:80px 20px;
 }
 
-section{
-padding:40px;
-}
-
-h2{
-color:#00ffcc;
+header h1{
+font-size:45px;
 }
 
 button{
-padding:10px 20px;
+background:#22c55e;
 border:none;
-background:#00ffcc;
+padding:12px 25px;
 font-size:16px;
 cursor:pointer;
 }
 
-</style>
+section{
+padding:60px 20px;
+text-align:center;
+}
 
+.skills{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.skill-box{
+background:#1e293b;
+padding:20px;
+width:200px;
+border-radius:10px;
+}
+
+.portfolio{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+width:250px;
+border-radius:10px;
+}
+
+footer{
+background:#020617;
+text-align:center;
+padding:20px;
+}
+
+</style>
 </head>
 
 <body>
 
+<nav>
+
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
 <header>
-Saurabh Yadav
+
+<h1>I Build Professional Websites</h1>
+
+<p>Helping creators and businesses build their online presence.</p>
+
+<button>Hire Me</button>
+
 </header>
 
-<section>
+<section id="about">
 
 <h2>About Me</h2>
 
-<p>I am learning Data Science and Video Editing.</p>
+<p>
+I create fast, modern and professional websites for businesses,
+YouTubers and freelancers.
+</p>
 
 </section>
 
-<section>
+<section id="skills">
 
-<h2>My YouTube Channel</h2>
+<h2>My Skills</h2>
 
-<p>DocMark95</p>
+<div class="skills">
+
+<div class="skill-box">Website Design</div>
+<div class="skill-box">HTML / CSS</div>
+<div class="skill-box">Video Editing</div>
+<div class="skill-box">YouTube Branding</div>
+
+</div>
 
 </section>
+
+<section id="portfolio">
+
+<h2>My Work</h2>
+
+<div class="portfolio">
+
+<div class="project">Business Website</div>
+<div class="project">Portfolio Website</div>
+<div class="project">YouTube Creator Website</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<p>Email: yourmail@gmail.com</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Portfolio Website</p>
+
+</footer>
 
 </body>
 </html>
